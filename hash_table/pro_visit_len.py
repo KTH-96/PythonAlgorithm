@@ -8,10 +8,7 @@ def solution(dirs):
         nx = x + command[move][0]
         ny = y + command[move][1]
         if -5 <= nx <= 5 and -5 <= ny <= 5:
-            if nx < x or ny < y:
-                visit.add(((nx, ny), (x, y)))
-            else:
-                visit.add(((x, y), (nx, ny)))
+            visit.add(((nx + x) / 2, (ny + y) / 2))
             x = nx
             y = ny
 

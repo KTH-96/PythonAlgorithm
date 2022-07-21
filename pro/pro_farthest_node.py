@@ -16,7 +16,7 @@ def bfs(nodes, start, n):
 
 
 def solution(n, vertex):
-    nodes = [[n] for n in range((n + 1))]
+    nodes = [[] for n in range((n + 1))]
 
     for a, b in vertex:
         nodes[a].append(b)

@@ -15,3 +15,26 @@ class Solution:
             list1.next = self.mergeTwoLists(list1.next, list2)
 
         return list1
+#         if not (list1 or list2):
+#             return None
+#         head1=list1
+#         head2=list2
+#         if not list1:
+#             return head2
+#         if not list2:
+#             return head1
+#         arr=[]
+#         while head1:
+#             arr.append(head1.val)
+#             head1=head1.next
+#         while head2:
+#             arr.append(head2.val)
+#             head2=head2.next
+#         arr.sort()
+#
+#         newHead=ListNode(arr[0])
+#         cur=newHead
+#         for i in range(1,len(arr)):
+#             cur.next=ListNode(arr[i])
+#             cur=cur.next
+#         return newHead

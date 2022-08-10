@@ -44,4 +44,39 @@ class Solution:
             cur_node = cur_node.next
 
         return new_node
-
+#     연결리스트 뒤집기
+#     def reverseList(self, head: ListNode) -> ListNode:
+#         node, prev = head, None
+#         while node:
+#             next, node.next = node.next, prev
+#             prev, node = node, next
+#
+#         return prev
+#
+#     연결리스트를 리스트형태로 변환
+#     def toList(self, node: ListNode) -> List:
+#         list: List = []
+#
+#         while node:
+#             list.append(node.val)
+#             node = node.next
+#
+#         return list
+#
+#     리스트를 연결 리스트로형태로 변환
+#     def toReversedLinkedList(self, result: str) -> ListNode:
+#         prev: ListNode = None
+#         for r in result:
+#             node = ListNode(r)
+#             node.next = prev
+#             prev = node
+#
+#         return node
+#
+#     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+#         a = self.toList(self.reverseList(l1))
+#         b = self.toList(self.reverseList(l2))
+#
+#         result_str = int(''.join(str(e) for e in a)) + int(''.join(str(e) for e in b))
+#
+#         return self.toReversedLinkedList(str(result_str))

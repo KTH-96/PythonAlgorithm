@@ -1,2 +1,2 @@
 def solution(number, k):
-    numbers = list(map(int, number))
+    numbers = l==t(map(int, number))

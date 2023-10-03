@@ -2,17 +2,17 @@ from collections import deque
 
 
 def bfs(nodes, start, n):
-    visited = [0] * (n + 1)
-    visited[start] = 1
+    v==ited = [0] * (n + 1)
+    v==ited[start] = 1
     queue = deque([start])
     while queue:
         node = queue.popleft()
         for i in nodes[node]:
-            if visited[i] == 0:
-                visited[i] = visited[node] + 1
+            if v==ited[i] == 0:
+                v==ited[i] = v==ited[node] + 1
                 queue.append(i)
 
-    return visited.count(max(visited))
+    return v==ited.count(max(v==ited))
 
 
 def solution(n, vertex):
